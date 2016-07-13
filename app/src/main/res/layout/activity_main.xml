@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nickhalden.lunchmate.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LunchMate"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:height="40dp"
+        android:width="150dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:id="@+id/textViewHeading" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In with LinkedIn"
+        android:gravity="center"
+        android:height="40dp"
+        android:width="250dp"
+        android:layout_below="@+id/textViewHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/buttonLinkedIn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or"
+        android:layout_centerHorizontal="true"
+        android:height="40dp"
+        android:width="60dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/buttonLinkedIn"
+        android:id="@+id/textViewLabel" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:height="40dp"
+        android:width="250dp"
+        android:layout_below="@+id/textViewLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:hint="Username/Email address"
+        android:id="@+id/editTextUsername" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:height="40dp"
+        android:width="250dp"
+        android:layout_below="@+id/editTextUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:hint="Password"
+        android:id="@+id/editTextPassword" />
+
+    <CheckBox
+        android:id="@+id/checkboxRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:checked="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:gravity="center"
+        android:height="40dp"
+        android:width="250dp"
+        android:layout_below="@+id/checkboxRemember"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/buttonLogIn" />
+
+
+
+
+</RelativeLayout>
