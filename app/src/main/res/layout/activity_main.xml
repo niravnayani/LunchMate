@@ -31,7 +31,7 @@
         android:width="250dp"
         android:layout_below="@+id/textViewHeading"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:textSize="20dp"
         android:textAllCaps="false"
         android:id="@+id/buttonLinkedIn" />
@@ -44,8 +44,8 @@
         android:height="40dp"
         android:width="60dp"
         android:gravity="center"
-        android:textSize="25dp"
-        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
         android:layout_below="@+id/buttonLinkedIn"
         android:id="@+id/textViewLabel" />
 
@@ -57,7 +57,7 @@
         android:width="250dp"
         android:layout_below="@+id/textViewLabel"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="5dp"
         android:textSize="20dp"
         android:textAllCaps="false"
         android:hint="Username/Email address"
@@ -71,7 +71,7 @@
         android:width="250dp"
         android:layout_below="@+id/editTextUsername"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:textSize="20dp"
         android:textAllCaps="false"
         android:hint="Password"
@@ -82,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editTextPassword"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="40dp"
         android:checked="true" />
 
@@ -95,10 +95,24 @@
         android:width="250dp"
         android:layout_below="@+id/checkboxRemember"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:textSize="20dp"
         android:textAllCaps="false"
         android:id="@+id/buttonLogIn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:gravity="center"
+        android:height="40dp"
+        android:width="250dp"
+        android:layout_below="@+id/buttonLogIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/buttonRegister" />
 
 
 
