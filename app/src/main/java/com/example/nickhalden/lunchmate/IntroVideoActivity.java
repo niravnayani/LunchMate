@@ -5,14 +5,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class HomeActivity extends AppCompatActivity {
+public class IntroVideoActivity extends AppCompatActivity {
 
     Button btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_introvideo);
         btnBack = (Button) findViewById(R.id.buttonBack);
         btnBack.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
