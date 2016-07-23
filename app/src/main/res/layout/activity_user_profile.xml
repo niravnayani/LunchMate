@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    tools:context="com.example.nickhalden.lunchmate.UserProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="LunchMate"
+            android:layout_marginTop="15dp"
+            android:textSize="25sp"
+            android:id="@+id/textViewHeading1" />
+
+        <ImageButton
+            android:id="@+id/imageButtonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_next" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/tim" />
+
+    <!-- Dummy item to prevent EditText from receiving focus -->
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:weightSum="1.0"
+        android:gravity="center"
+        >
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_width="0dip"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:hint="Name *"
+            android:singleLine = "true"
+            android:id="@+id/editTextName"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:weightSum="1.0"
+        android:gravity="center"
+        >
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_width="0dip"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:hint="City *"
+            android:singleLine = "true"
+            android:id="@+id/editTextCity"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:weightSum="1.0"
+        android:gravity="center"
+        >
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_width="0dip"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:hint="Industry *"
+            android:singleLine = "true"
+            android:id="@+id/editTextIndustry"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:weightSum="1.0"
+        android:gravity="center"
+        >
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_width="0dip"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:hint="Company *"
+            android:singleLine = "true"
+            android:id="@+id/editTextCompany"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:weightSum="1.0"
+        android:gravity="center"
+        >
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_width="0dip"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:hint="Title *"
+            android:singleLine = "true"
+            android:id="@+id/editTextTitle"/>
+
+    </LinearLayout>
+</LinearLayout>

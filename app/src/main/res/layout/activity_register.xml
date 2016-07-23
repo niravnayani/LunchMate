@@ -3,20 +3,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
     android:orientation="vertical"
     tools:context="com.example.nickhalden.lunchmate.RegisterActivity">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="LunchMate"
-        android:layout_marginTop="15dp"
-        android:textSize="25sp"
-        android:id="@+id/textViewHeading" />
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="LunchMate"
+            android:layout_marginTop="15dp"
+            android:textSize="25sp"
+            android:id="@+id/textViewHeading1" />
+
+        <ImageButton
+            android:id="@+id/imageButtonNext"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_next" />
+
+
+    </RelativeLayout>
 
     <TextView
         android:layout_width="wrap_content"
@@ -134,8 +152,7 @@
         android:layout_width="fill_parent"
         android:orientation="horizontal"
         android:weightSum="1.0"
-        android:gravity="center|bottom"
-        >
+        android:gravity="center|bottom">
         <Button
             android:layout_height="wrap_content"
             android:layout_weight="0.8"

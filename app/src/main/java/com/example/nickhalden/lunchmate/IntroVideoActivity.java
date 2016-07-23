@@ -12,12 +12,12 @@ public class IntroVideoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_introvideo);
+        setContentView(R.layout.activity_intro_video);
         //btnBack = (Button) findViewById(R.id.buttonBack);
         //btnBack.setOnClickListener(new View.OnClickListener() {
-            //public void onClick(View v) {
-             //  finish();
-           // }
+        //public void onClick(View v) {
+        //  finish();
+        // }
         //});
     }
 }
