@@ -42,7 +42,7 @@
         android:text="Register with LunchMate"
         android:textSize="22sp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:id="@+id/textViewLabel" />
 
     <!-- Dummy item to prevent EditText from receiving focus -->

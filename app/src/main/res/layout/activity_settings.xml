@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -20,11 +26,10 @@
             android:text="LunchMate"
             android:layout_marginTop="15dp"
             android:textSize="25sp"
-            android:id="@+id/textViewHeading1" />
+            android:id="@+id/textViewHeading" />
 
         <ImageButton
             android:id="@+id/imageButtonNext"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -35,4 +40,299 @@
 
     </RelativeLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="22sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textViewLabelSettings" />
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Default Location"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textViewLabelDefaultLocation" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textViewLabelDefaultLocation"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_info_outline_black_24dp"
+            android:id="@+id/imageViewDefaultLocation"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="3"
+        android:gravity="top|left"
+        android:maxLines="3"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"
+        android:background="@drawable/border"
+        android:id="@+id/editTextLocation"/>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Price Range"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textViewLabelPriceRange" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textViewLabelPriceRange"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_info_outline_black_24dp"
+            android:id="@+id/imageViewPriceRange" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        tools:context="com.example.nickhalden.lunchmate.SettingsActivity">
+        <CheckBox
+            android:id="@+id/checkboxRemember1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ (less than $10/dish)"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/textViewPrice1" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        tools:context="com.example.nickhalden.lunchmate.SettingsActivity">
+        <CheckBox
+            android:id="@+id/checkboxRemember2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$$ ($10-$15/dish)"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/textViewPrice2" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        tools:context="com.example.nickhalden.lunchmate.SettingsActivity">
+        <CheckBox
+            android:id="@+id/checkboxRemember3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$$$ ($15-$20/dish)"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/textViewPrice3" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        tools:context="com.example.nickhalden.lunchmate.SettingsActivity">
+        <CheckBox
+            android:id="@+id/checkboxRemember4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$$$$ (more than $20/dish)"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/textViewPrice4" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Restrictions"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textViewLabelRestrictions" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textViewLabelRestrictions"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_info_outline_black_24dp"
+            android:id="@+id/imageViewRestrictions"/>
+
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        tools:context="com.example.nickhalden.lunchmate.SettingsActivity">
+        <CheckBox
+            android:id="@+id/checkboxRemember5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Il Pastaio"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/textViewRestriction1" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        tools:context="com.example.nickhalden.lunchmate.SettingsActivity">
+        <CheckBox
+            android:id="@+id/checkboxRemember6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sugarfish"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/textViewRestriction2" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        tools:context="com.example.nickhalden.lunchmate.SettingsActivity">
+        <CheckBox
+            android:id="@+id/checkboxRemember7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Il Cielo"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/textViewRestriction3" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        tools:context="com.example.nickhalden.lunchmate.SettingsActivity">
+        <CheckBox
+            android:id="@+id/checkboxRemember8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lemonade"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/textViewRestriction4" />
+    </LinearLayout>
+
 </LinearLayout>
+
+</ScrollView>
